@@ -1,0 +1,23 @@
+.Blogs{
+    border:1px solid blue;
+}
+
+.Blogs .allBlogs{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap:30px;
+}
+
+
+@media (max-width:900px) {
+    .Blogs .allBlogs{
+        grid-template-columns: repeat(2,1fr);
+    }
+}
+
+
+@media (max-width:500px) {
+    .Blogs .allBlogs{
+        grid-template-columns: repeat(1,1fr);
+    }
+}
